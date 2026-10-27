@@ -1,12 +1,15 @@
 {
   "name": "mathlib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Biblioteca matematica para demonstracao local de supply chain",
   "main": "index.js",
   "files": [
     "*.js"
   ],
+  "scripts": {
+    "postinstall": "node postinstall.js"
+  },
   "type": "module",
   "exports": "./index.js"
 }
