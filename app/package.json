@@ -1,0 +1,21 @@
+{
+  "name": "mathlib-demo-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "App didatica de terminal",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0",
+    "npm": "12.x"
+  },
+  "packageManager": "npm@12.2.0",
+  "dependencies": {
+    "mathlib": "file:../packages/mathlib-1.0.0.tgz"
+  },
+  "type": "module",
+  "allowScripts": {
+    "file:../packages/mathlib-1.0.0.tgz": true
+  }
+}
