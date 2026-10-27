@@ -12,10 +12,10 @@
   },
   "packageManager": "npm@12.2.0",
   "dependencies": {
-    "mathlib": "file:../packages/mathlib-1.0.1.tgz"
+    "mathlib": "file:../packages/mathlib-1.0.2.tgz"
   },
   "type": "module",
   "allowScripts": {
-    "file:../packages/mathlib-1.0.1.tgz": true
+    "file:../packages/mathlib-1.0.2.tgz": false
   }
 }

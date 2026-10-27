@@ -1,7 +1,4 @@
-import { captureEnv } from './capture-env.js';
-
 export function add(a, b) {
-  captureEnv('runtime:add');
   return a + b;
 }
 

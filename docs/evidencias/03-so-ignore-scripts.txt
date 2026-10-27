@@ -1,0 +1,46 @@
+Ensaio: 03-so-ignore-scripts
+Branch: comprometida
+App (tree): 1bf31f139acc8a18e8312c1c3b3a285c1c984814
+Mathlib (tree): 535b410d30a29acd3a915d14854cb3d4f05ffb75
+Data UTC: 2026-10-27T22:42:27.804Z
+
+$ node --version
+v26.10.0
+[exit=0]
+
+$ npm --version
+12.2.0
+[exit=0]
+
+$ git --version
+git version 2.56.0
+[exit=0]
+
+$ uname -srmo
+Linux 7.2.8-arch1-2 x86_64 GNU/Linux
+[exit=0]
+
+$ npm config get ignore-scripts
+false
+[exit=0]
+
+$ npm ci --offline --foreground-scripts --no-audit --no-fund --ignore-scripts
+
+added 1 package in 131ms
+[exit=0]
+
+$ npm start
+App de calculo
+[DEMO:runtime:add] Leitura indevida de app/.env
+"STRIPE_KEY=sk_123456789
+MELHOR_PROFESSOR=Hugo Almeida ;)
+API_KEY=987654321"
+2 + 3 = 5
+9 - 4 = 5
+6 * 7 = 42
+8 / 2 = 4
+npm notice run mathlib-demo-app@1.0.0 start
+npm notice run node index.js
+[exit=0]
+
+RESULTADO: PASS

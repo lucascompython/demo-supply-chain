@@ -1,0 +1,35 @@
+Ensaio: 05-integridade
+Branch: corrigida
+App (tree): ae84b22722ec41aca79a9321a6b7acde540fdec6
+Mathlib (tree): fb90d1febfbb79f02b8d8a2442a510135c502b40
+Data UTC: 2026-10-27T22:42:28.569Z
+
+$ node --version
+v26.10.0
+[exit=0]
+
+$ npm --version
+12.2.0
+[exit=0]
+
+$ git --version
+git version 2.56.0
+[exit=0]
+
+$ uname -srmo
+Linux 7.2.8-arch1-2 x86_64 GNU/Linux
+[exit=0]
+
+$ npm config get ignore-scripts
+true
+[exit=0]
+
+$ npm ci --offline --foreground-scripts --no-audit --no-fund
+npm warn tarball tarball data for mathlib@file:/tmp/mathlib-demo-Aaf0c4/packages/mathlib-1.0.2.tgz (sha512-E72GXF0dEBgjjbx0Z3mLjQyhf1LNcfq3dTNSrNHiwtnm5jV0osU32sDEJwA5myzaa+WRHtSngqNSYMPLMjgUYA==) seems to be corrupted. Trying again.
+npm warn tarball tarball data for mathlib@file:/tmp/mathlib-demo-Aaf0c4/packages/mathlib-1.0.2.tgz (sha512-E72GXF0dEBgjjbx0Z3mLjQyhf1LNcfq3dTNSrNHiwtnm5jV0osU32sDEJwA5myzaa+WRHtSngqNSYMPLMjgUYA==) seems to be corrupted. Trying again.
+npm error code EINTEGRITY
+npm error sha512-E72GXF0dEBgjjbx0Z3mLjQyhf1LNcfq3dTNSrNHiwtnm5jV0osU32sDEJwA5myzaa+WRHtSngqNSYMPLMjgUYA== integrity checksum failed when using sha512: wanted sha512-E72GXF0dEBgjjbx0Z3mLjQyhf1LNcfq3dTNSrNHiwtnm5jV0osU32sDEJwA5myzaa+WRHtSngqNSYMPLMjgUYA== but got sha512-EWspnzGb8JIfI9J1tsqh308K3KGfKqcZhi/P6XReMDBVpMxUrXtdqwvT7h68rWTZ5VozY9pAX4f5s07QpYK5FA==. (403 bytes)
+npm error A complete log of this run can be found in: /tmp/mathlib-demo-Aaf0c4/.npm-cache/_logs/2026-10-27T22_42_28_727Z-debug-0.log
+[exit=1]
+
+RESULTADO: PASS
